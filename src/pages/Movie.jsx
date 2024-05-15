@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useParams } from "react-router-dom"
 
 import {
@@ -19,6 +19,8 @@ const Movie = () => {
   const { id } = useParams()
   const [movie, setMovie] = useState(null)
   const [trailer, setTrailer] = useState(null)
+  const trailerRef = useRef(null)
+
 
   const getMovie = async (url) => {
     const res = await fetch(url)
@@ -44,8 +46,15 @@ const Movie = () => {
   const handleWatchTrailer = () => {
     if (movie) {
       getTrailer(movie.title)
+      trailerRef.current.focus()
     }
   }
+
+  useEffect(() => {
+    if (trailerRef.current) {
+      trailerRef.current.focus()
+    }
+  }, [trailer])
 
   return (
     <div className="movie-page">
@@ -71,7 +80,7 @@ const Movie = () => {
             <button className="go-watch" onClick={handleWatchTrailer}>Assistir</button>
           </div>
           {trailer && (
-            <div className="trailer">
+            <div className="trailer" tabIndex={0} ref={trailerRef}>
               <iframe
                 width="900"
                 height="480"
