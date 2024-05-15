@@ -23,7 +23,7 @@ const Navbar = () => {
     <>
       <div className="header-container">
         <Link to="/">
-          <img src="../../public/images/title.png" className="title-img" alt="title-img" />
+          <img src="/images/title.png" className="title-img" alt="title-img" />
         </Link>
       </div>
 
