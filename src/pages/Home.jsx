@@ -31,7 +31,7 @@ const Home = () => {
         {topMovies.length > 0 &&
           topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </div>
-      <GenresList />
+      {/* <GenresList /> */}
     </div>
   );
 };

@@ -24,8 +24,8 @@ const Search = () => {
   };
 
   useEffect(() => {
-    setMovies([]);  // Clear previous movies when query changes
-    setPage(1);  // Reset page to 1
+    setMovies([]);
+    setPage(1);
   }, [query]);
 
   useEffect(() => {
@@ -48,13 +48,12 @@ const Search = () => {
   return (
     <div className="container">
       <h2 className="title">
-        Resultados para <span className="query-text">{query}</span>
+        Resultados para <span className="query-text">"{query}"</span>
       </h2>
       <div className="movies-container">
-        {movies.length === 0 && <p>Carregando...</p>}
+        {movies.length === 0 && <p className="loading">Carregando... Aguarde...</p>}
         {movies.length > 0 && movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </div>
-      {loading && <p>Carregando mais filmes...</p>}
     </div>
   );
 };
