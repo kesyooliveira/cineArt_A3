@@ -1,5 +1,3 @@
-// ForgotPassword.jsx
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Auth.css';
@@ -9,6 +7,7 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
   };
 
   return (
