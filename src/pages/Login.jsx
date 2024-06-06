@@ -35,7 +35,7 @@ const Login = () => {
         />
         <button type="submit">Entrar</button>
       </form>
-      <p>Esqueceu a senha? <a href="/forgot-password">Clique aqui</a></p>
+      <p>Esqueceu a senha? <a href="/forgot-password">Clique aqui!</a></p>
       <p>Não possui conta? <a href="/register">Cadastre-se</a></p>
     </div>
   );
