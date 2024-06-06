@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route element={<AuthLayout />}>
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="forgot-password" element={<ForgotPassword />} />
+          <Route path="forgotpassword" element={<ForgotPassword />} />
         </Route>
       </Routes>
     </BrowserRouter>
