@@ -29,7 +29,7 @@ const Navbar = () => {
 
       <nav id='navbar'>
         <h2 className="surprise">
-          <Link to="/">Surpeenda-me</Link>
+          <Link to="/login">Login / Cadastre-se</Link>
         </h2>
         <ul>
           <li><Link to="/genre/28">Ação</Link></li>
