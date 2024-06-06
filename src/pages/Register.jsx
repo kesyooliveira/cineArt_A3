@@ -1,5 +1,7 @@
+// Register.jsx
+
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Auth.css';
 
 const Register = () => {
@@ -41,7 +43,7 @@ const Register = () => {
         />
         <button type="submit">Cadastrar</button>
       </form>
-      <p>Já possui conta? <a href="/login">Entrar</a></p>
+      <p>Já possui conta? <Link to="/login">Entrar</Link></p>
     </div>
   );
 };

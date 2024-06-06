@@ -1,6 +1,7 @@
-// src/pages/Login.jsx
+// Login.jsx
+
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './Auth.css';
 
 const Login = () => {
@@ -10,7 +11,6 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Adicione lógica de autenticação aqui
     console.log('Login:', { email, password });
     navigate('/');
   };
@@ -35,8 +35,8 @@ const Login = () => {
         />
         <button type="submit">Entrar</button>
       </form>
-      <p>Esqueceu a senha? <a href="/forgot-password">Clique aqui!</a></p>
-      <p>Não possui conta? <a href="/register">Cadastre-se</a></p>
+      <p>Esqueceu a senha? <Link to="/forgot-password">Clique aqui!</Link></p>
+      <p>Não possui conta? <Link to="/register">Cadastre-se</Link></p>
     </div>
   );
 };

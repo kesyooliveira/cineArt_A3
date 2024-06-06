@@ -1,5 +1,7 @@
+// ForgotPassword.jsx
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Auth.css';
 
 const ForgotPassword = () => {
@@ -25,7 +27,7 @@ const ForgotPassword = () => {
         />
         <button type="submit">Enviar</button>
       </form>
-      <a href="/login">Voltar ao login.</a>
+      <Link to="/login">Voltar ao login.</Link>
     </div>
   );
 };
