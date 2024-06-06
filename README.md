@@ -1,8 +1,27 @@
-# React + Vite
+Projeto A3 - Usabilidade, desenvolvimento Web, Mobile e Jogos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-------------------------------
 
-Currently, two official plugins are available:
+Professores: Flávio Calado e Leandro de Oliveira
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Integrantes: 
+Rodrigo Da Silva Lima - RA 1262224709
+Regina Celi Lopes De Lima - RA 1262223113
+Késyo Urgue De Oliveira - RA 322211358
+Túlio Henrique De Oliveira Marques - RA 322210858
+Calvin Silva Moreira da Costa - RA 1262224746
+Cleiton Cabral - RA 1272414808 
+Willian da Silva Silveira - RA 1072221401
+
+Nome do projeto/site: Cineart
+
+APIs usadas: The Movi DataBase API e Youtube API
+
+Versão disponível: Beta
+
+Melhorias a serem feitas:
+
+- Adição de página de login;
+- Scroll infinito nas páginas;
+- Ajustes CSS nos resultados de busca;
+- Responsividade.
