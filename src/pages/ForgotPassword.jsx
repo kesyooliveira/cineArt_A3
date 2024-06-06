@@ -9,9 +9,6 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log('Forgot Password:', { email });
-    alert('If an account with that email exists, a password reset link will be sent.');
   };
 
   return (
