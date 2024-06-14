@@ -17,11 +17,4 @@ Nome do projeto/site: Cineart
 
 APIs usadas: The Movi DataBase API e Youtube API
 
-Versão disponível: Beta
-
-Melhorias a serem feitas:
-
-- Adição de página de login;
-- Scroll infinito nas páginas;
-- Ajustes CSS nos resultados de busca;
-- Responsividade.
+Versão disponível: Final
